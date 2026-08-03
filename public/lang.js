@@ -147,7 +147,122 @@ const translations = {
     "newsletter.invalid": "Please enter a valid email.",
     "account.dashboard": "Dashboard",
     "account.settings": "Account Settings",
-    "account.logout": "Logout"
+    "account.logout": "Logout",
+
+    /* Redesign additions — hero */
+    "nav.why": "Why Choose Us",
+    "hero.badge": "Trusted Healthcare Since 2007",
+    "hero.welcome_prefix": "Welcome to",
+    "hero.subtitle": "Quality primary care, diagnostics, maternity and pharmacy services for you and your family in Douala.",
+    "hero.call_label": "Call us 24/7",
+    "hero.hours_value": "Open Mon–Sun 24/7",
+    "hero.hours_label": "Always available for you",
+    "hero.fc_top_title": "Open 24/7",
+    "hero.fc_bottom_title": "17+ Years",
+    "hero.fc_bottom_sub": "Serving Douala since 2007",
+    "btn.view_services": "View Services",
+
+    /* section eyebrow labels */
+    "label.about": "About Us",
+    "label.services": "Our Services",
+    "label.why": "Why Choose Us",
+    "label.team": "Our Team",
+    "label.contact": "Get in Touch",
+    "label.health_tips": "Health Tips",
+
+    /* about */
+    "about.stat1_label": "Years of Service",
+    "about.stat2_label": "Patients Served",
+    "about.stat3_label": "Availability",
+    "about.badge": "Est. 2007",
+
+    /* services intro + extra cards */
+    "services.intro": "From routine checkups to specialized care, we provide a wide range of medical services to keep you and your family healthy.",
+    "featured.emergency.title": "Emergency Care",
+    "featured.emergency.desc": "Non-invasive imaging and urgent medical attention when you need it most.",
+    "featured.checkups.title": "Health Checkups",
+    "featured.checkups.desc": "Routine preventive screenings and wellness assessments for all ages.",
+
+    /* why choose intro */
+    "why.intro": "We combine modern medical technology with compassionate care to deliver the best health outcomes for our patients.",
+
+    /* team */
+    "team.intro": "Our dedicated professionals bring years of experience and genuine compassion to every patient interaction.",
+    "team.page_intro": "Meet the dedicated professionals serving St. Agnes Health Centre.",
+    "team.doc1.specialty": "General Practitioner",
+    "team.doc1.desc": "Experienced clinician in primary care, chronic disease management and emergency assessment.",
+    "team.doc2.specialty": "Pediatrician",
+    "team.doc2.desc": "Caring pediatric specialist focused on growth, immunisation and child development.",
+    "team.staff.title": "Our Medical Staff",
+    "team.staff.specialty": "Nurses & Support Team",
+    "team.staff.desc": "A compassionate team of nurses, lab technicians and support staff dedicated to your wellbeing.",
+    "btn.meet_team": "Meet the Full Team",
+
+    /* appointment CTA band */
+    "cta.title": "Your care starts here.",
+    "cta.desc": "Reach out today and our team will help you find the right care, at a time that works for you.",
+    "cta.book_btn": "Book an Appointment",
+    "cta.contact_btn": "Contact the Clinic",
+
+    /* contact section */
+    "contact.intro": "We are here to help. Reach out to us or schedule your visit today.",
+    "contact.phone_label": "Phone",
+    "contact.email_label": "Email",
+    "contact.location_label": "Location",
+    "contact.hours_label": "Opening Hours",
+    "contact.hours_value": "Monday – Sunday: Open 24/7",
+
+    /* appointment form */
+    "form.full_name": "Full Name",
+    "form.name_ph": "Your name",
+    "form.email": "Email Address",
+    "form.email_ph": "you@example.com",
+    "form.phone": "Phone Number",
+    "form.phone_ph": "+237 6XX XXX XXX",
+    "form.date": "Preferred Date",
+    "form.service": "Service",
+    "form.opt.select": "Select a service...",
+    "form.opt.consultation": "Medical Consultation",
+    "form.opt.maternity": "Maternity Care",
+    "form.opt.laboratory": "Laboratory",
+    "form.opt.pharmacy": "Pharmacy",
+    "form.opt.vaccination": "Vaccination",
+    "form.opt.ultrasound": "Ultrasound",
+    "form.opt.pediatrics": "Pediatrics",
+    "form.opt.surgery": "Minor Surgery",
+    "form.opt.other": "Other",
+    "form.message": "Message (optional)",
+    "form.message_ph": "Briefly describe your concern...",
+    "form.submit": "Book Appointment",
+
+    /* blog / health tips */
+    "blog.card1.title": "Stay Hydrated",
+    "blog.card1.desc": "Drinking water is essential for good health. Aim for at least 8 glasses a day to keep your body functioning at its best.",
+    "blog.card2.title": "Wash Your Hands",
+    "blog.card2.desc": "Regular handwashing with soap prevents infections and protects you and your loved ones from illness.",
+    "blog.card3.title": "Get Vaccinated",
+    "blog.card3.desc": "Vaccines protect you and your community. Stay up to date with your immunisations for a healthier life.",
+
+    /* footer / search / misc */
+    "footer.newsletter_intro": "Subscribe for health tips and updates from St. Agnes.",
+    "search.go": "Go",
+    "aria.call_us": "Call us",
+    "footer.rights": "All rights reserved.",
+
+    /* inner-page hero (services, appointment) */
+    "page.services.eyebrow": "Our Services",
+    "page.services.heading": "Comprehensive Healthcare Services",
+    "page.services.subtitle": "From routine checkups to specialised care, explore the full range of medical services available at St. Agnes Health Centre.",
+    "page.gallery.eyebrow": "Our Facility",
+    "page.gallery.heading": "A Closer Look Inside St. Agnes",
+    "page.gallery.subtitle": "A glimpse of our clinic environment, equipment and care spaces.",
+    "page.services_cta.title": "Ready to book your visit?",
+    "page.services_cta.desc": "Choose a service above and our team will take care of the rest.",
+    "page.appointment.eyebrow": "Book a Visit",
+    "page.appointment.subtitle": "Pick a time that works for you below, or reach us directly by phone or WhatsApp — our team is available 24/7.",
+    "page.appointment.whatsapp_label": "WhatsApp",
+    "page.appointment.whatsapp_value": "Message us on WhatsApp",
+    "page.appointment.calendar_heading": "Pick a Date & Time"
   },
   fr: {
     "main-title": "Bienvenue au Centre de Santé Ste. Agnès",
@@ -296,7 +411,122 @@ const translations = {
     "newsletter.invalid": "Veuillez saisir une adresse email valide.",
     "account.dashboard": "Tableau de Bord",
     "account.settings": "Paramètres du Compte",
-    "account.logout": "Se Déconnecter"
+    "account.logout": "Se Déconnecter",
+
+    /* Redesign additions — hero */
+    "nav.why": "Pourquoi Nous Choisir",
+    "hero.badge": "Soins de Confiance Depuis 2007",
+    "hero.welcome_prefix": "Bienvenue au",
+    "hero.subtitle": "Soins primaires de qualité, diagnostics, maternité et services de pharmacie pour vous et votre famille à Douala.",
+    "hero.call_label": "Appelez-nous 24/7",
+    "hero.hours_value": "Ouvert Lun–Dim 24/7",
+    "hero.hours_label": "Toujours disponible pour vous",
+    "hero.fc_top_title": "Ouvert 24/7",
+    "hero.fc_bottom_title": "17+ Ans",
+    "hero.fc_bottom_sub": "Au service de Douala depuis 2007",
+    "btn.view_services": "Voir les Services",
+
+    /* section eyebrow labels */
+    "label.about": "À Propos de Nous",
+    "label.services": "Nos Services",
+    "label.why": "Pourquoi Nous Choisir",
+    "label.team": "Notre Équipe",
+    "label.contact": "Contactez-Nous",
+    "label.health_tips": "Conseils de Santé",
+
+    /* about */
+    "about.stat1_label": "Années de Service",
+    "about.stat2_label": "Patients Servis",
+    "about.stat3_label": "Disponibilité",
+    "about.badge": "Depuis 2007",
+
+    /* services intro + extra cards */
+    "services.intro": "Des bilans de routine aux soins spécialisés, nous offrons une large gamme de services médicaux pour la santé de toute votre famille.",
+    "featured.emergency.title": "Soins d'Urgence",
+    "featured.emergency.desc": "Imagerie non invasive et prise en charge médicale urgente lorsque vous en avez le plus besoin.",
+    "featured.checkups.title": "Bilans de Santé",
+    "featured.checkups.desc": "Dépistages préventifs de routine et évaluations de bien-être pour tous les âges.",
+
+    /* why choose intro */
+    "why.intro": "Nous combinons technologie médicale moderne et soins attentionnés pour offrir les meilleurs résultats de santé à nos patients.",
+
+    /* team */
+    "team.intro": "Nos professionnels dévoués apportent des années d'expérience et une compassion sincère à chaque interaction avec les patients.",
+    "team.page_intro": "Rencontrez les professionnels dévoués du Centre de Santé Ste. Agnès.",
+    "team.doc1.specialty": "Médecin Généraliste",
+    "team.doc1.desc": "Clinicien expérimenté en soins primaires, gestion des maladies chroniques et évaluation des urgences.",
+    "team.doc2.specialty": "Pédiatre",
+    "team.doc2.desc": "Spécialiste pédiatrique attentionnée, axée sur la croissance, la vaccination et le développement de l'enfant.",
+    "team.staff.title": "Notre Personnel Médical",
+    "team.staff.specialty": "Infirmiers & Équipe de Soutien",
+    "team.staff.desc": "Une équipe compatissante d'infirmiers, de techniciens de laboratoire et de personnel de soutien dévouée à votre bien-être.",
+    "btn.meet_team": "Découvrir Toute l'Équipe",
+
+    /* appointment CTA band */
+    "cta.title": "Vos soins commencent ici.",
+    "cta.desc": "Contactez-nous dès aujourd'hui et notre équipe vous aidera à trouver les soins adaptés, au moment qui vous convient.",
+    "cta.book_btn": "Prendre un Rendez-vous",
+    "cta.contact_btn": "Contacter le Centre",
+
+    /* contact section */
+    "contact.intro": "Nous sommes là pour vous aider. Contactez-nous ou planifiez votre visite dès aujourd'hui.",
+    "contact.phone_label": "Téléphone",
+    "contact.email_label": "Email",
+    "contact.location_label": "Localisation",
+    "contact.hours_label": "Horaires d'Ouverture",
+    "contact.hours_value": "Lundi – Dimanche : Ouvert 24/7",
+
+    /* appointment form */
+    "form.full_name": "Nom Complet",
+    "form.name_ph": "Votre nom",
+    "form.email": "Adresse Email",
+    "form.email_ph": "vous@exemple.com",
+    "form.phone": "Numéro de Téléphone",
+    "form.phone_ph": "+237 6XX XXX XXX",
+    "form.date": "Date Souhaitée",
+    "form.service": "Service",
+    "form.opt.select": "Sélectionnez un service...",
+    "form.opt.consultation": "Consultation Médicale",
+    "form.opt.maternity": "Soins de Maternité",
+    "form.opt.laboratory": "Laboratoire",
+    "form.opt.pharmacy": "Pharmacie",
+    "form.opt.vaccination": "Vaccination",
+    "form.opt.ultrasound": "Échographie",
+    "form.opt.pediatrics": "Pédiatrie",
+    "form.opt.surgery": "Petite Chirurgie",
+    "form.opt.other": "Autre",
+    "form.message": "Message (facultatif)",
+    "form.message_ph": "Décrivez brièvement votre préoccupation...",
+    "form.submit": "Réserver un Rendez-vous",
+
+    /* blog / health tips */
+    "blog.card1.title": "Restez Hydraté",
+    "blog.card1.desc": "Boire de l'eau est essentiel pour une bonne santé. Visez au moins 8 verres par jour pour que votre corps fonctionne au mieux.",
+    "blog.card2.title": "Lavez-vous les Mains",
+    "blog.card2.desc": "Un lavage régulier des mains avec du savon prévient les infections et protège vous et vos proches contre les maladies.",
+    "blog.card3.title": "Faites-vous Vacciner",
+    "blog.card3.desc": "Les vaccins vous protègent, vous et votre communauté. Restez à jour avec vos vaccinations pour une vie plus saine.",
+
+    /* footer / search / misc */
+    "footer.newsletter_intro": "Abonnez-vous pour recevoir des conseils de santé et actualités de Ste. Agnès.",
+    "search.go": "Rechercher",
+    "aria.call_us": "Appelez-nous",
+    "footer.rights": "Tous droits réservés.",
+
+    /* inner-page hero (services, appointment) */
+    "page.services.eyebrow": "Nos Services",
+    "page.services.heading": "Services de Santé Complets",
+    "page.services.subtitle": "Des bilans de routine aux soins spécialisés, découvrez toute la gamme de services médicaux disponibles au Centre de Santé Ste. Agnès.",
+    "page.gallery.eyebrow": "Notre Établissement",
+    "page.gallery.heading": "Un Aperçu du Centre Ste. Agnès",
+    "page.gallery.subtitle": "Un aperçu de notre environnement clinique, de nos équipements et de nos espaces de soins.",
+    "page.services_cta.title": "Prêt à réserver votre visite ?",
+    "page.services_cta.desc": "Choisissez un service ci-dessus et notre équipe s'occupe du reste.",
+    "page.appointment.eyebrow": "Réserver une Visite",
+    "page.appointment.subtitle": "Choisissez un horaire ci-dessous, ou contactez-nous directement par téléphone ou WhatsApp — notre équipe est disponible 24/7.",
+    "page.appointment.whatsapp_label": "WhatsApp",
+    "page.appointment.whatsapp_value": "Contactez-nous sur WhatsApp",
+    "page.appointment.calendar_heading": "Choisissez une Date et une Heure"
   }
 };
 
@@ -367,6 +597,14 @@ function setLanguage(lang) {
 
     // after all text updates:
     applyAttrTranslations(lang);
+
+    // Keep the EN/FR toggle buttons in sync with the active language
+    document.querySelectorAll('.lang-toggle .btn[data-lang]').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+
+    // Keep <html lang="..."> accurate for accessibility/SEO
+    document.documentElement.setAttribute('lang', lang);
 
     // Optionally, update dropdown button text
     const langBtn = document.getElementById('languageDropdown');

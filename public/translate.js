@@ -1,4 +1,4 @@
-// Google Translate setup with cookie persistence
+// Google Translate widget bootstrap (fallback for content lang.js doesn't cover)
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'en',
@@ -9,34 +9,7 @@ function googleTranslateElementInit() {
     }, 'google_translate_element');
 }
 
-// Cookie handler for translation persistence
-function setCookie(key, value, expiry) {
-    const expires = new Date();
-    expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
-    document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
-}
-
-// Language switcher that uses Google's API directly
-function changeLanguage(langCode) {
-    if (langCode === 'fr') {
-        doGTranslate('en|fr');
-        setCookie('googtrans', '/en/fr', 1);
-    } else {
-        doGTranslate('fr|en');
-        setCookie('googtrans', '/en/en', 1);
-    }
-    
-    // Force translation of dynamic content
-    setTimeout(() => {
-        const googleFrame = document.getElementsByClassName('goog-te-menu-frame')[0];
-        if (googleFrame) {
-            googleFrame.contentDocument.getElementById('gt-sl-gms').value = langCode;
-            googleFrame.contentDocument.getElementById('gt-submit').click();
-        }
-    }, 100);
-}
-
-// Translate any dynamically loaded content
+// Translate any dynamically loaded content (e.g. accordion panels) once Google Translate is active
 function translateNewContent(element) {
     if (window.google && window.google.translate) {
         const iframe = document.getElementsByClassName('goog-te-menu-frame')[0];

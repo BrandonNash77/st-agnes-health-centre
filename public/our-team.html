@@ -13,21 +13,28 @@
 <body>
 	<main class="py-5">
 		<div class="container">
-			<div class="mb-3">
-				<a href="index.html" class="btn btn-light" aria-label="Back to home">← Back to Home</a>
+			<div class="mb-3 d-flex align-items-center justify-content-between flex-wrap gap-2">
+				<a href="index.html" class="btn-back" aria-label="Back to home">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+					<span data-i18n="btn.back">Back to Home</span>
+				</a>
+				<div class="lang-toggle d-flex align-items-center">
+					<button type="button" class="btn active" data-lang="en" onclick="changeLanguage('en')" aria-label="English">EN</button>
+					<button type="button" class="btn" data-lang="fr" onclick="changeLanguage('fr')" aria-label="Fran&ccedil;ais">FR</button>
+				</div>
 			</div>
-			<h1 class="mb-3">Our Team</h1>
-			<p class="lead mb-4">Meet the dedicated professionals serving St. Agnes Health Centre.</p>
+			<h1 class="mb-3" data-i18n="nav.team">Our Team</h1>
+			<p class="lead mb-4" data-i18n="team.page_intro">Meet the dedicated professionals serving St. Agnes Health Centre.</p>
 
 			<div class="row g-4">
 				<div class="col-md-6 col-lg-4">
 					<div class="card h-100 doctor-card">
 						<div class="card-body d-flex gap-3 align-items-start">
-							<img src="images/doc1.jpg" alt="Dr. John Smith" class="doctor-img-lg">
+							<img src="images/doc1.jpg" alt="Dr. John Smith" class="doctor-img-lg" onerror="this.style.display='none';">
 							<div>
 								<h5 class="mb-1">Dr. John Smith</h5>
-								<div class="small specialty mb-2">General Practitioner</div>
-								<p class="small text-muted mb-0">Experienced clinician in primary care, chronic disease management and emergency assessment.</p>
+								<div class="small specialty mb-2" data-i18n="team.doc1.specialty">General Practitioner</div>
+								<p class="small text-muted mb-0" data-i18n="team.doc1.desc">Experienced clinician in primary care, chronic disease management and emergency assessment.</p>
 							</div>
 						</div>
 					</div>
@@ -36,11 +43,11 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="card h-100 doctor-card">
 						<div class="card-body d-flex gap-3 align-items-start">
-							<img src="images/doc2.jpg" alt="Dr. Emily Johnson" class="doctor-img-lg">
+							<img src="images/doc2.jpg" alt="Dr. Emily Johnson" class="doctor-img-lg" onerror="this.style.display='none';">
 							<div>
 								<h5 class="mb-1">Dr. Emily Johnson</h5>
-								<div class="small specialty mb-2">Pediatrician</div>
-								<p class="small text-muted mb-0">Caring pediatric specialist focused on growth, immunisation and child development.</p>
+								<div class="small specialty mb-2" data-i18n="team.doc2.specialty">Pediatrician</div>
+								<p class="small text-muted mb-0" data-i18n="team.doc2.desc">Caring pediatric specialist focused on growth, immunisation and child development.</p>
 							</div>
 						</div>
 					</div>
@@ -50,17 +57,10 @@
 			</div>
 
 			<div class="mt-4 text-center">
-				<a href="appointment.html" class="btn btn-cta-book">Book An Appointment</a>
+				<a href="appointment.html" class="btn btn-cta-book" data-i18n="btn.book">Book An Appointment</a>
 			</div>
 		</div>
 	</main>
-
-	<div class="dropdown me-2">
-		<div class="btn-group">
-			<button type="button" class="btn btn-secondary" onclick="changeLanguage('en')">EN</button>
-			<button type="button" class="btn btn-secondary" onclick="changeLanguage('fr')">FR</button>
-		</div>
-	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="script.js"></script>
