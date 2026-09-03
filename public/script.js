@@ -270,4 +270,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   window.addEventListener('scroll', highlightNavOnScroll, { passive: true });
+
+  // ========== WHY CHOOSE US ACCORDION ==========
+  document.querySelectorAll('.why-accordion-trigger').forEach(trigger => {
+    trigger.addEventListener('click', function () {
+      const item = this.closest('.why-accordion-item');
+      const content = item.querySelector('.why-accordion-content');
+      const isActive = item.classList.contains('active');
+
+      // Close all other items
+      document.querySelectorAll('.why-accordion-item.active').forEach(other => {
+        if (other !== item) {
+          other.classList.remove('active');
+          other.querySelector('.why-accordion-trigger').setAttribute('aria-expanded', 'false');
+          other.querySelector('.why-accordion-content').style.maxHeight = '0';
+        }
+      });
+
+      // Toggle current item
+      if (isActive) {
+        item.classList.remove('active');
+        this.setAttribute('aria-expanded', 'false');
+        content.style.maxHeight = '0';
+      } else {
+        item.classList.add('active');
+        this.setAttribute('aria-expanded', 'true');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  });
 });
